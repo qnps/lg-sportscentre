@@ -1,0 +1,21 @@
+{
+    "compilerOptions": {
+        "target": "es2017",
+        "module": "commonjs",
+        "outDir": "dist",
+        "allowJs": true,
+        "lib": [
+            "es2017",
+            "es2018.promise"
+        ]
+    },
+    "include": [
+        "src/**/*.ts"
+    ],
+    "exclude": [
+        "node_modules",
+        "src/**/*.spec.ts",
+        "src/**/*.test.ts",
+        "src/interfaces"
+    ]
+}

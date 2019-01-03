@@ -1,0 +1,65 @@
+{
+    "env": {
+        "es6": true,
+        "node": true,
+        "jest/globals": true
+    },
+    "extends": "eslint:recommended",
+    "parser": "typescript-eslint-parser",
+    "parserOptions": {
+        "ecmaVersion": 2018,
+        "sourceType": "module",
+        "ecmaFeatures": {
+            "modules": true
+        }
+    },
+    "rules": {
+        "no-console": "off",
+        "indent": [
+            "error",
+            4
+        ],
+        "linebreak-style": [
+            "error",
+            "windows"
+        ],
+        "quotes": [
+            "error",
+            "single",
+            {
+                "allowTemplateLiterals": true,
+                "avoidEscape": true
+            }
+        ],
+        "semi": [
+            "error",
+            "always"
+        ]
+    },
+    "plugins": [
+        "jest"
+    ],
+    "overrides": [
+        {
+            "files": [
+                "src/**/*.ts"
+            ],
+            "rules": {
+                "no-unused-vars": [
+                    "off"
+                ]
+            }
+        },
+        {
+            "files": [
+                "dist/**/*.js"
+            ],
+            "rules": {
+                "quotes": [
+                    "error",
+                    "double"
+                ]
+            }
+        }
+    ]
+}
