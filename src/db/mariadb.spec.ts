@@ -1,17 +1,15 @@
-import os = require('os');
-
 import BaseConnector from './BaseConnector';
-import Sqlite3Connector from './SQlite3Connector';
+import MariaDbConnector from './mariadb';
 
-const config = {file: `${os.tmpdir()}/duthie.db`};
-const connector = new Sqlite3Connector(config);
+const config = {host: 'localhost', user: 'root', password: ''};
+const connector = new MariaDbConnector(config);
 
 it(`is an instance of ${BaseConnector.name}`, () => {
     expect(connector).toBeInstanceOf(BaseConnector);
 });
 
-it(`is an instance of ${Sqlite3Connector.name}`, () => {
-    expect(connector).toBeInstanceOf(Sqlite3Connector);
+it(`is an instance of ${MariaDbConnector.name}`, () => {
+    expect(connector).toBeInstanceOf(MariaDbConnector);
 });
 
 it(`has properties ${Object.entries(config).reduce((props, [key, value]) => [...props, `${key}='${value}'`], []).join(', ')}`, () => {
@@ -20,12 +18,12 @@ it(`has properties ${Object.entries(config).reduce((props, [key, value]) => [...
     }
 });
 
-it(`implements ${Sqlite3Connector.prototype.close.name}`, done => {
+it(`implements ${MariaDbConnector.prototype.close.name}`, done => {
     setTimeout(done, 100);
     expect(connector.close().catch(()=>{})).toBeInstanceOf(Promise);
 });
 
-it(`implements ${Sqlite3Connector.prototype.connect.name}`, done => {
+it(`implements ${MariaDbConnector.prototype.connect.name}`, done => {
     setTimeout(done, 100);
     expect(connector.connect().catch(()=>{})).toBeInstanceOf(Promise);
 });

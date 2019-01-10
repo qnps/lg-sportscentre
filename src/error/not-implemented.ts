@@ -1,4 +1,4 @@
-import BaseError from './BaseError';
+import BaseError from './base';
 
 export default class NotImplementedError extends BaseError {
     public constructor(message?: string, cause?: Error) {

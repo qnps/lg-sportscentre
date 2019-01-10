@@ -1,6 +1,6 @@
 import { DatabaseError } from '../interfaces';
 
-import BaseError from './BaseError';
+import BaseError from './base';
 
 export default class SqlError extends BaseError implements DatabaseError {
     public readonly code?: string;

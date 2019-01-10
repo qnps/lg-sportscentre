@@ -7,7 +7,7 @@ import { ApiError, NotImplementedError } from '../error';
 import { Api, ApiOptions, Game, TeamList } from '../interfaces';
 import { Team } from '../utils';
 
-import BaseApi from './BaseApi';
+import BaseApi from './base';
 
 export default class VghlApi extends BaseApi implements Api {
     public readonly subdomain: string;

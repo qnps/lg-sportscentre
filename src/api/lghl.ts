@@ -7,7 +7,7 @@ import { NewsItemType } from '../enums';
 import { ApiError, NotImplementedError } from '../error';
 import { ApiOptions, DailyStars, ExtendedApi, Game, League, NewsItem, Team, TeamList } from '../interfaces';
 
-import BaseApi from './BaseApi';
+import BaseApi from './base';
 
 export default class LghlApi extends BaseApi implements ExtendedApi {
     public constructor(options: ApiOptions = {}) {

@@ -1,5 +1,5 @@
 import BaseError from './BaseError';
-import SqlError from './SqlError';
+import SqlError from './sql';
 
 let error;
 

@@ -4,7 +4,7 @@ import querystring = require('querystring');
 const { normalizeDiacritics, normalizeName } = normalize;
 
 import BaseApi from './BaseApi';
-import VghlApi from './VghlApi';
+import VghlApi from './vghl';
 
 const api = new VghlApi();
 const leagueId = 'vgnhl';

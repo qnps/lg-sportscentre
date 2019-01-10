@@ -1,7 +1,7 @@
 import moment = require('moment-timezone');
 
-import BaseApi from './BaseApi';
-import LghlApi from './LghlApi';
+import BaseApi from './base';
+import LghlApi from './lghl';
 
 const api = new LghlApi();
 const leagueId = 67;

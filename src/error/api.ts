@@ -1,6 +1,6 @@
 import { WebError } from '../interfaces';
 
-import BaseError from './BaseError';
+import BaseError from './base';
 
 export default class ApiError extends BaseError implements WebError {
     public readonly statusCode?: string | number;

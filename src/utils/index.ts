@@ -1,2 +1,2 @@
-export { default as Logger } from './Logger';
-export * from './Team';
+export { default as Logger } from './logger';
+export * from './team';

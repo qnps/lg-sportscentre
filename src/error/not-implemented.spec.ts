@@ -1,5 +1,5 @@
 import BaseError from './BaseError';
-import NotImplementedError from './NotImplementedError';
+import NotImplementedError from './not-implemented';
 
 let error;
 

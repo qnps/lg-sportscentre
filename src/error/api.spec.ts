@@ -1,5 +1,5 @@
-import BaseError from './BaseError';
-import ApiError from './ApiError';
+import BaseError from './base';
+import ApiError from './api';
 
 let error;
 

@@ -4,7 +4,7 @@ sqlite3.verbose();
 import { SqlError } from '../error';
 import { DbConnector, DbConnectorOptions } from '../interfaces';
 
-import BaseConnector from './BaseConnector';
+import BaseConnector from './base';
 
 export default class Sqlite3Connector extends BaseConnector implements DbConnector {
     public readonly file: string;

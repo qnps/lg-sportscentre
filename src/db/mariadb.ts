@@ -4,7 +4,7 @@ import Pool = require('mariadb/lib/pool');
 import { SqlError } from '../error';
 import { DbConnector, DbConnectorOptions } from '../interfaces';
 
-import BaseConnector from './BaseConnector';
+import BaseConnector from './base';
 
 export default class MariaDbConnector extends BaseConnector implements DbConnector {
     public readonly host: string;

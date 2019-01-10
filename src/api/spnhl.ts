@@ -3,7 +3,7 @@ import moment = require('moment-timezone');
 import { Api, ApiOptions, Game, TeamList } from '../interfaces';
 import { Team } from '../utils';
 
-import BaseApi from './BaseApi';
+import BaseApi from './base';
 
 export default class SpnhlApi extends BaseApi implements Api {
     public constructor(options: ApiOptions = {}) {
