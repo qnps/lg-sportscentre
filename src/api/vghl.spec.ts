@@ -1,9 +1,6 @@
-import moment = require('moment-timezone');
-import normalize = require('normalize-text');
-import querystring = require('querystring');
-const { normalizeDiacritics, normalizeName } = normalize;
+import 'jest';
 
-import BaseApi from './BaseApi';
+import BaseApi from './base';
 import VghlApi from './vghl';
 
 const api = new VghlApi();

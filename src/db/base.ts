@@ -1,5 +1,5 @@
 import { NotImplementedError } from '../error';
-import { DbConnectorOptions } from '../interfaces';
+import { DbConnectorOptions } from '../types';
 
 export default abstract class BaseConnector {
     public constructor(options: DbConnectorOptions = {}) {

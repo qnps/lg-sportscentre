@@ -1,3 +1,5 @@
+import 'jest';
+
 import BaseError from './base';
 import ApiError from './api';
 

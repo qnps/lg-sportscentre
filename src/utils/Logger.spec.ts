@@ -1,3 +1,5 @@
+import 'jest';
+
 import { LogLevel } from '../enums';
 
 import DefaultLogger from './logger';

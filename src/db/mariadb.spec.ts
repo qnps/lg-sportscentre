@@ -1,4 +1,6 @@
-import BaseConnector from './BaseConnector';
+import 'jest';
+
+import BaseConnector from './base';
 import MariaDbConnector from './mariadb';
 
 const config = {host: 'localhost', user: 'root', password: ''};

@@ -1,4 +1,6 @@
-import BaseError from './BaseError';
+import 'jest';
+
+import BaseError from './base';
 import NotImplementedError from './not-implemented';
 
 let error;

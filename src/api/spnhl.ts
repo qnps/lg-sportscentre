@@ -1,6 +1,6 @@
 import moment = require('moment-timezone');
 
-import { Api, ApiOptions, Game, TeamList } from '../interfaces';
+import { Api, ApiOptions, Game, TeamList } from '../types';
 import { Team } from '../utils';
 
 import BaseApi from './base';

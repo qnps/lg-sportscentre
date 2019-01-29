@@ -6,7 +6,7 @@ import url = require('url');
 const { URL } = url;
 
 import { ApiError, NotImplementedError } from '../error';
-import { ApiOptions, DailyStars, Game, League, NewsItem, TeamList } from '../interfaces';
+import { ApiOptions, DailyStars, Game, League, NewsItem, TeamList } from '../types';
 
 export default abstract class BaseApi {
     public readonly defaultTimezone: string;

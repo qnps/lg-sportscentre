@@ -1,4 +1,4 @@
-import moment = require('moment-timezone');
+import 'jest';
 
 import BaseApi from './base';
 import LghlApi from './lghl';
@@ -44,19 +44,7 @@ it(`implements ${LghlApi.prototype.getGames.name}`, () => {
 
     expect.assertions(2);
     expect(promise).toBeInstanceOf(Promise);
-
-    return expect(promise).resolves.toContainEqual({
-        id: 502048,
-        date: new Date('2018-11-13T05:00:00.000Z'),
-        visitor: {
-            id: 75,
-            score: 0,
-        },
-        home: {
-            id: 15,
-            score: 10,
-        },
-    });
+    return expect(promise).resolves.toBeInstanceOf(Array);
 });
 
 it(`implements ${LghlApi.prototype.getInfo.name}`, () => {
@@ -77,13 +65,7 @@ it(`implements ${LghlApi.prototype.getNews.name}`, () => {
 
     expect.assertions(2);
     expect(promise).toBeInstanceOf(Promise);
-
-    return expect(promise).resolves.toContainEqual({
-        message: 'Fraserburn has signed up for season 10 of the LGHL PSN as Position: Left Wing',
-        teams: [],
-        timestamp: new Date('2018-12-29T14:56:00.000Z'),
-        type: 'news',
-    });
+    return expect(promise).resolves.toBeInstanceOf(Array);
 });
 
 it(`implements ${LghlApi.prototype.getTeams.name}`, () => {

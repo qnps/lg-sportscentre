@@ -1,5 +1,4 @@
-import { WebError } from '../interfaces';
-
+import { WebError } from '../types';
 import BaseError from './base';
 
 export default class ApiError extends BaseError implements WebError {

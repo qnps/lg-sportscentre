@@ -1,6 +1,8 @@
+import 'jest';
+
 import os = require('os');
 
-import BaseConnector from './BaseConnector';
+import BaseConnector from './base';
 import Sqlite3Connector from './sqlite3';
 
 const config = {file: `${os.tmpdir()}/duthie.db`};

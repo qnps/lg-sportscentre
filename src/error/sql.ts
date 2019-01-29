@@ -1,5 +1,4 @@
-import { DatabaseError } from '../interfaces';
-
+import { DatabaseError } from '../types';
 import BaseError from './base';
 
 export default class SqlError extends BaseError implements DatabaseError {

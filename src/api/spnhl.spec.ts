@@ -1,6 +1,6 @@
-import moment = require('moment-timezone');
+import 'jest';
 
-import BaseApi from './BaseApi';
+import BaseApi from './base';
 import SpnhlApi from './spnhl';
 
 const api = new SpnhlApi();

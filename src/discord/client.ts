@@ -8,13 +8,7 @@ export default DiscordClient;
 process.on('exit', () => {
     DiscordClient
         .destroy()
-        .then(err => {
-            if (err) {
-                Logger.error(err);
-            }
-
-            Logger.info('Closed connection to Discord');
-        })
+        .then(() => Logger.info('Closed connection to Discord'))
         .catch(err => {
             Logger.error(err);
         });

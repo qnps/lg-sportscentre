@@ -2,7 +2,7 @@ import sqlite3 = require('sqlite3');
 sqlite3.verbose();
 
 import { SqlError } from '../error';
-import { DbConnector, DbConnectorOptions } from '../interfaces';
+import { DbConnector, DbConnectorOptions } from '../types';
 
 import BaseConnector from './base';
 

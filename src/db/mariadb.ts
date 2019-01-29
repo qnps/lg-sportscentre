@@ -2,7 +2,7 @@ import mariadb = require('mariadb');
 import Pool = require('mariadb/lib/pool');
 
 import { SqlError } from '../error';
-import { DbConnector, DbConnectorOptions } from '../interfaces';
+import { DbConnector, DbConnectorOptions } from '../types';
 
 import BaseConnector from './base';
 

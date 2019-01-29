@@ -5,7 +5,7 @@ const { normalizeDiacritics, normalizeName } = normalize;
 
 import { NewsItemType } from '../enums';
 import { ApiError, NotImplementedError } from '../error';
-import { ApiOptions, DailyStars, ExtendedApi, Game, League, NewsItem, Team, TeamList } from '../interfaces';
+import { ApiOptions, DailyStars, ExtendedApi, Game, League, NewsItem, Team, TeamList } from '../types';
 
 import BaseApi from './base';
 

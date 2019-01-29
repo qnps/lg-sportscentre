@@ -5,8 +5,13 @@
         "outDir": "dist",
         "allowJs": true,
         "lib": [
+            "es6",
             "es2017",
             "es2018.promise"
+        ],
+        "types": [
+            "jest",
+            "node"
         ]
     },
     "include": [
@@ -16,6 +21,6 @@
         "node_modules",
         "src/**/*.spec.ts",
         "src/**/*.test.ts",
-        "src/interfaces"
+        "src/types"
     ]
 }

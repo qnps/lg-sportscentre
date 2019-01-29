@@ -4,7 +4,7 @@ import querystring = require('querystring');
 const { normalizeDiacritics, normalizeName } = normalize;
 
 import { ApiError, NotImplementedError } from '../error';
-import { Api, ApiOptions, Game, TeamList } from '../interfaces';
+import { Api, ApiOptions, Game, TeamList } from '../types';
 import { Team } from '../utils';
 
 import BaseApi from './base';
