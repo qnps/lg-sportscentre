@@ -4,24 +4,15 @@
   "description": "Duthie Bot informs your Discord server of the latest news and scores from any of the EA NHL leagues hosted at LeagueGaming.com and MyVirtualGaming.com",
   "author": "Trevor Frizzell",
   "license": "MIT",
-  "main": "dist/bot.js",
+  "main": "bot.js",
   "scripts": {
-    "build": "npm test && tsc",
-    "lint": "eslint src --ext ts",
-    "start": "",
+    "lint": "eslint lib",
     "test": "jest"
   },
   "devDependencies": {
-    "@types/jest": "^23.3.10",
-    "@types/moment-timezone": "^0.5.9",
-    "@types/node": "^10.12.19",
-    "@types/promise.prototype.finally": "^2.0.2",
     "eslint": "^5.10.0",
     "eslint-plugin-jest": "^22.1.2",
-    "jest": "^23.6.0",
-    "ts-jest": "^23.10.5",
-    "typescript": "^3.2.2",
-    "typescript-eslint-parser": "^21.0.2"
+    "jest": "^23.6.0"
   },
   "dependencies": {
     "bufferutil": "^3.0.3",

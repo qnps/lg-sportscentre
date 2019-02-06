@@ -2,7 +2,8 @@ FROM node:8.11.1-alpine
 
 WORKDIR /app
 
-COPY dist/* ./
+COPY bot.js ./
+COPY lib ./
 
 RUN npm install --only=production
 
